@@ -1,42 +1,85 @@
 <!DOCTYPE HTML>
-<head>
-<title>BOFXV差分二次会(仮)難易度表</title>
-<meta charset="UTF-8">
-<meta name="bmstable" content="json/header.json">
-<link rel="stylesheet" href="css/table.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
-</head>
-<body>
-<p style="font-size: 24pt;font-weight: 600;text-align: center;">BOFXV差分二次会(仮)難易度表</p>
-<p style="font-size: 16pt;font-weight: 600;text-align: center;">＝難易度＝<br>
-Lv0→★1未満<br>
-Lv1→★1〜6<br>
-Lv2→★7〜12<br>
-Lv3→★13〜16<br>
-Lv4→★17〜20<br>
-Lv5→★21,22<br>
-Lv6→★23,24<br>
-Lv7→★25<br>
-Lv8→★★6,★★7<br>
-Lv9→発狂譜面以外(LNなど)<br>
-Lv10→DP譜面</p>
-<br><br>
-<div class="tableflame">
-<table align="center" class="tablesorter">
-<thead>
-<tr>
-<th width="6%">Lv↕</th>
-<th width="1%">Score</th>
-<th width="20%">Title↕</th>
-<th width="12%">Artist↕</th>
-<th width="3%">DL</th>
-<th width="15%">Comment↕</th>
-</tr>
-</thead>
-<tbody id="table_int"></tbody>
-</table>
-</div>
-<script src="js/table.js"></script>
-</body>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BOFXV差分二次会(仮)難易度表</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="bmstable" content="assets/json/header.json" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/table.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">BMS chart Editors’ Group</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="https://discord.gg/NsBUFPR">Discord</a></li>
+							<li><a href="https://twitter.com/BMS_E_G">Twitter</a></li>
+						</ul>
+					</nav>
+				</header>
+				
+				<!-- Banner -->
+				<section id="banner">
+					<h2 class="title">BOFXV差分二次会(仮)</h2>
+					<p class="title">BOFXV差分二次会(仮)難易度表</strong></p>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>BOFXV差分二次会(仮)難易度表</h2>
+					</header>
+					<div class="table-wrapper">
+						<table class="diffflame"><colgroup><col style="width: 125px;"><col style="width: 125px;"></colgroup> <tbody><tr><th colspan="2" style="border-color: #000000; border-style: solid; border-width: 3px 3px 3px;"><b>難易度換算表</b></th></tr><tr><td><b>Lv0</b></td><td>★1↓</td></tr><tr><td><b>Lv1</b></td><td>★1~6</td></tr><tr><td><b>Lv2</b></td><td>★7~12</td></tr><tr><td><b>Lv3</b></td><td>★13~16</td></tr><tr><td><b>Lv4</b></td><td>★17~20</td></tr><tr><td><b>Lv5</b></td><td>★21~22</td></tr><tr><td><b>Lv6</b></td><td>★23~24</td></tr><tr><td><b>Lv7</b></td><td>★25</td></tr><tr><td><b>Lv8</b></td><td>★★6~7</td></tr><tr><td><b>Lv9</b></td><td>発狂譜面以外(LNなど)</td></tr><tr><td><b>Lv10</b></td><td>DP</td></tr></tbody></table>
+					</div><br>
+					<br>
+					<div class="box">
+					<div class="table-wrapper tableflame">
+						<table align="center" class="tablesorter">
+							<thead>
+								<tr>
+									<th width="6%">Lv↕</th>
+									<th width="1%">Score</th>
+									<th width="20%">Title↕</th>
+									<th width="20%">Artist↕</th>
+									<th width="5%">DL</th>
+									<th width="25%">Comment↕</th>
+								</tr>
+							</thead>
+							<tbody id="table_int"></tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
+			<script src="assets/js/table.js"></script>
+
+	</body>
 </html>
