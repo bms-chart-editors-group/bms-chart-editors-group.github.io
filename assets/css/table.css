@@ -57,7 +57,7 @@
 }
 
 .tableflame .state1 {
- background-color: #8888ff;
+  background-color: #8888ff;
 }
 
 .tableflame .state2 {
@@ -101,16 +101,17 @@
 /* etc */
 
 .diffflame {
-margin: auto;
-table-layout: fixed;
-width: 250px;
-text-align: center;
-border: 3px solid #000;
-border-collapse: collapse;
+  margin: auto;
+  table-layout: fixed;
+  width: 250px;
+  text-align: center;
+  border: 3px solid #000;
+  border-collapse: collapse;
 }
 
 .diffflame td {
-border: 1px solid #000;
+  border: 1px solid #000;
+  vertical-align: middle;
 }
 
 .title {
@@ -118,51 +119,6 @@ border: 1px solid #000;
   text-shadow: 2px 2px 2px gray;
 }
 
-#update {
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-#shortcut_diff {
-  margin: auto;
-  color: #000;
-  font-size: 0.9em;
-  text-align: center;
-  border: solid 2px #000;
-}
-
-#shortcut_diff td {
-  border: solid 1px #000;
-}
-
-#shortcut_diff a {
-	color:#000
-}
-
-#changelog {
-  display: none;
-  color: #000;
-  overflow: auto;
-  width: 550px;
-  padding: 10px;
-  background-color: #82828287;
-  margin: left;
-  border-radius: 0.375em;
-}
-
-@media screen and (max-width: 760px) {
-  #changelog {
-    display: none;
-    color: #000;
-    overflow: auto;
-    width: 100%;
-    padding: 10px;
-    background-color: #82828287;
-    margin: left;
-    border-radius: 0.375em;
-  }
-}
-
 #table_int a {
-	color:#000
+  color:#000
 }
