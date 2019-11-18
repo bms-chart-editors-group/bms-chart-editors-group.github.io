@@ -2440,6 +2440,17 @@
 				background: #e5cb95;
 				color: #ffffff;
 			}
+		
+		.icon.custom {
+			border-radius: 100%;
+			color: #ffffff;
+			cursor: default;
+			display: inline-block;
+			height: 5.5em;
+			line-height: 5.5em;
+			margin: 0 0 2em 0;
+			width: 5.5em;
+		}
 
 /* Image */
 
@@ -3181,6 +3192,8 @@
 		}
 
 		#banner h2 {
+			font-weight: 600;
+			text-shadow: 3px 3px 3px gray;
 			font-size: 3.5em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
@@ -3188,6 +3201,8 @@
 		}
 
 		#banner p {
+			font-weight: 600;
+			text-shadow: 3px 3px 3px gray;
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
 		}
