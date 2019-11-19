@@ -160,17 +160,17 @@ function makeBMSTable(info, mark, order) {
         }
         $("<td width='12%'>" + astr + "</td>").appendTo(str);
         // Pattern Download
-        if (info[i].url_diff != "" && info[i].url_diff != null) {
+        if (info[i].personal_site != "" && info[i].personal_site != null) {
             if (info[i].name_diff != "" && info[i].name_diff != null) {
-                $("<td width='3%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+                $("<td width='3%'><a href='" + info[i].personal_site + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
             } else {
-                $("<td width='3%'><a href='" + info[i].url_diff + "'>DL</a></td>").appendTo(str);
+                $("<td width='3%'><a href='" + info[i].personal_site + "'>作者不明</a></td>").appendTo(str);
             }
         } else {
             if (info[i].name_diff != "" && info[i].name_diff != null) {
                 $("<td width='3%'>" + info[i].name_diff + "</td>").appendTo(str);
             } else {
-                $("<td width='3%'>同梱</td>").appendTo(str);
+                $("<td width='3%'></td>").appendTo(str);
             }
         }
         // Comment
