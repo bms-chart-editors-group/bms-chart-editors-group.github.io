@@ -138,9 +138,9 @@ function makeBMSTable(info, mark, order) {
         var astr = "";
         if (info[i].url != "" && info[i].url != null) {
             if (info[i].artist != "" && info[i].artist != null) {
-                astr = "<a href='" + info[i].url + "'>" + info[i].artist + "</a>";
+                astr = "<a href='" + info[i].url + "' target='_blank'>" + info[i].artist + "</a>";
             } else {
-                astr = "<a href='" + info[i].url + "'>" + info[i].url + "</a>";
+                astr = "<a href='" + info[i].url + "' target='_blank'>" + info[i].url + "</a>";
             }
         } else {
             if (info[i].artist != "" && info[i].artist != null) {
@@ -149,9 +149,9 @@ function makeBMSTable(info, mark, order) {
         }
         if (info[i].url_pack != "" && info[i].url_pack != null) {
             if (info[i].name_pack != "" && info[i].name_pack != null) {
-                astr += "<br>(<a href='" + info[i].url_pack + "'>" + info[i].name_pack + "</a>)";
+                astr += "<br>(<a href='" + info[i].url_pack + "' target='_blank'>" + info[i].name_pack + "</a>)";
             } else {
-                astr += "<br>(<a href='" + info[i].url_pack + "'>" + info[i].url_pack + "</a>)";
+                astr += "<br>(<a href='" + info[i].url_pack + "' target='_blank'>" + info[i].url_pack + "</a>)";
             }
         } else {
             if (info[i].name_pack != "" && info[i].name_pack != null) {
@@ -162,9 +162,9 @@ function makeBMSTable(info, mark, order) {
         // Pattern Download
         if (info[i].personal_site != "" && info[i].personal_site != null) {
             if (info[i].name_diff != "" && info[i].name_diff != null) {
-                $("<td width='3%'><a href='" + info[i].personal_site + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+                $("<td width='3%'><a href='" + info[i].personal_site + "' target='_blank'>" + info[i].name_diff + "</a></td>").appendTo(str);
             } else {
-                $("<td width='3%'><a href='" + info[i].personal_site + "'>作者不明</a></td>").appendTo(str);
+                $("<td width='3%'><a href='" + info[i].personal_site + "' target='_blank'>作者不明</a></td>").appendTo(str);
             }
         } else {
             if (info[i].name_diff != "" && info[i].name_diff != null) {
