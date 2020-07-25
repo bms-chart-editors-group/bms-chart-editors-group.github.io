@@ -1,8 +1,12 @@
+// Table Load Message
+$(".tableflame").append("<div id='tableLoading'>Loading...</div>");
+
 //Difficulty Table
 $(document).ready(function() {
     $.getJSON($("meta[name=bmstable]").attr("content"), function(header) {
         $.getJSON(header.data_url, function(information) {
             makeBMSTable(information, header.symbol);
+            $("#tableLoading").remove();
             $(".tablesorter").tablesorter({
                 sortList: [
                     [0, 0],
@@ -20,6 +24,7 @@ function makeBMSTable(info, mark) {
     var obj = $("#table_int");
     // Table Clear
     obj.html("");
+    $("<thead><tr><th width='5%'>Lv <i class='fas fa-arrows-alt-v'></i></th><th width='1%'>Score</th><th width='20%'>Title <i class='fas fa-arrows-alt-v'></i></th><th width='20%'>Artist <i class='fas fa-arrows-alt-v'></i></th><th width='5%'>Patterner <i class='fas fa-arrows-alt-v'></i></th><th width='25%'>Comment <i class='fas fa-arrows-alt-v'></i></th></tr></thead><tbody></tbody>").appendTo(obj);
     var obj_sep = null;
     for (var i = 0; i < info.length; i++) {
         if (x != info[i].level) {

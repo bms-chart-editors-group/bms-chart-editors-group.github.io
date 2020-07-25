@@ -114,6 +114,12 @@
   vertical-align: middle;
 }
 
+#tableLoading {
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 #table_int a {
   color:#000
 }
