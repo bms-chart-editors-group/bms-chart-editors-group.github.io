@@ -24,7 +24,7 @@ function makeBMSTable(info, mark) {
     var obj = $("#table_int");
     // Table Clear
     obj.html("");
-    $("<thead><tr><th width='5%'>Lv <i class='fas fa-arrows-alt-v'></i></th><th width='1%'>Score</th><th width='20%'>Title <i class='fas fa-arrows-alt-v'></i></th><th width='20%'>Artist <i class='fas fa-arrows-alt-v'></i></th><th width='5%'>Patterner <i class='fas fa-arrows-alt-v'></i></th><th width='25%'>Comment <i class='fas fa-arrows-alt-v'></i></th></tr></thead><tbody></tbody>").appendTo(obj);
+    $("<thead><tr><th width='5%'>Lv <i class='fas fa-arrows-alt-v'></i></th><th width='1%'>Score</th><th width='20%'>Title <i class='fas fa-arrows-alt-v'></i></th><th width='20%'>Artist <i class='fas fa-arrows-alt-v'></i></th><th width='5%'>Maker <i class='fas fa-arrows-alt-v'></i></th><th width='25%'>Comment <i class='fas fa-arrows-alt-v'></i></th></tr></thead><tbody></tbody>").appendTo(obj);
     var obj_sep = null;
     for (var i = 0; i < info.length; i++) {
         if (x != info[i].level) {
@@ -85,7 +85,7 @@ function makeBMSTable(info, mark) {
             }
         }
         $("<td width='12%'>" + astr + "</td>").appendTo(str);
-        // Pattern Download
+        // Chart Maker
         if (info[i].personal_site != "" && info[i].personal_site != null) {
             if (info[i].name_diff != "" && info[i].name_diff != null) {
                 $("<td width='3%'><a href='" + info[i].personal_site + "' target='_blank'>" + info[i].name_diff + "</a></td>").appendTo(str);
